@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CKEditor 5 Framework – Quick start</title>
+  <style>
+    .tip-content-box {
+      width: 100%;
+      position: relative;
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /* .tip-content-box:hover .close{
+      display: block;
+    } */
+  
+    .tip-title {
+      background: white;
+      text-align: center;
+      font-size: 14px;
+      position: absolute;
+      top: -10px;
+      cursor: text;
+      height: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .edit-item-box {
+      margin: 20px 0;
+    }
+  
+    .tip-content {
+      font-size: 14px;
+      cursor: text;
+    }
+  
+    .close {
+      position: absolute;
+      top: -7px;
+      right: -4px;
+      width: 14px;
+      height: 14px;
+      color: white;
+      background: #ccc;
+      text-align: center;
+      line-height: 12px;
+      border-radius: 50%;
+      display: none;
+      z-index: 99;
+      cursor: pointer;
+    }
+  
+    .tip-title p {
+      padding: 0 10px;
+      color: #365f93;
+      font-weight: bold;
+      transform: translateY(-15px);
+    }
+  
+    .closeIcon {
+      transform: scaleX(1.2) translateX(0px) translateY(-1.5px);
+      display: inline-block;
+      font-size: 12px;
+    }
+
+    .ck .ck-widget_selected{
+      background: rgba(72,145,255,.16);
+    }
+    .ck .ck-widget{
+      outline-style: none;
+      outline-color:transparent !important;
+      transition: none !important;
+    }
+    .ck .ck-widget:hover{
+      outline-style:dashed;
+      outline-color:#ccc !important;
+      outline-width:1.2px;
+    }
+    .ck .ck-widget_selected.ck-widget{
+      outline-style:dashed !important;
+      outline-color:#ccc !important;
+      outline-width:1.2px !important;
+    }
+    .tip-title, .tip-content, .tip-content-box{
+      outline:none !important;
+    }
+    .ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover{
+      color: green;
+    }
+    .ck-editor__editable {
+      min-height: 300px;
+      width: 800px !important;
+    }
+    .ck-toolbar, .ck-sticky-panel__content{
+      width: 821px !important;
+    }
+    #testClose{
+      width: 20px;
+      height: 20px;
+      background:black;
+      color: white;
+      position: absolute;
+      left: -1000px;
+      top: -1000px;
+      cursor: pointer;
+      z-index: 100;
+      text-align: center;
+      line-height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="editor">
+    <p>Editor content goes here.</p>
+  </div>
+  <div id="testClose">X</div>
+
+  <input type="button" value="Delete" id="deleteBtn">
+
+  <script src="dist/bundle.js"></script>
+</body>
+
+</html>
